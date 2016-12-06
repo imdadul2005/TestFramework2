@@ -4,9 +4,14 @@
 <suite  name="Freestor Automation Framework" parallel="tests">
 
     <parameter name="browserName" value="chrome"></parameter>
-    <parameter name="url" value="10.7.6.65"></parameter>
+    <parameter name="url" value="http://192.168.15.65"></parameter>
     <parameter name="username" value="admin"></parameter>
     <parameter name="domain" value="qa.com"></parameter>
-    <parameter name="password" value="superadmin"></parameter>
+    <parameter name="password" value="sangbe"></parameter>
 
+    <test name = "Freestor TestSuit">
+        <classes>
+            <class name="loginTest"/>
+        </classes>
+    </test>
 </suite>

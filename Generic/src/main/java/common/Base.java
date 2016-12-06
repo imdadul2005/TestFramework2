@@ -4,6 +4,7 @@ package common;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -11,11 +12,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.SystemClock;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,69 +28,68 @@ import java.util.logging.Logger;
 
 
 /**
- * Created by rrt on 8/21/2016.
+ * Created by Imdadul  on 8/21/2016.
  */
 public class Base {
 
 
     public WebDriver driver = null;
 //    public static Logger logger = LogManager.getLogger(Base.class);
-
-
-    @Parameters({"browserName","url","accessKey","username","domain","password"})
+    @Parameters({"browserName","url","username","domain","password"})
     @BeforeMethod
-    public void setUp(@Optional("Chrome") String browserName, @Optional("http://www.cnn.com") String url,@Optional("admin") String username,@Optional("") String domain,@Optional("freestor") String password)
+    public void setUp(@Optional("firefox") String browserName,@Optional("http://www.cnn.com") String url,@Optional("admin") String username,@Optional("") String domain,@Optional("freestor") String password)
     {
+
+        System.out.print(System.getProperty("user.dir"));
         getLocalDriver(browserName);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(url);
         driver.manage().window().maximize();
     }
-
-
     public WebDriver getLocalDriver(String browserName){
+        System.out.println(System.getProperty("user.dir"));
         if(browserName.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver","C:\\Users\\Imdadul\\Desktop\\8_28\\micro-wave-master\\micro-wave-master\\Generic\\selenium-browser-driveer\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\selenium-browser-driveer\\chromedriver.exe");
             driver = new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("firefox")){
-            System.setProperty("webdriver.gecko.driver","C:\\Users\\Imdadul\\Desktop\\8_28\\micro-wave-master\\micro-wave-master\\Generic\\selenium-browser-driver\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\selenium-browser-driver\\geckodriver.exe");
             driver = new FirefoxDriver();
         } else if(browserName.equalsIgnoreCase("ie")) {
-            System.setProperty("webdriver.ie.driver", "Generic/browser-driver/IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/browser-driver/IEDriverServer.exe");
             driver = new InternetExplorerDriver();
+        }else if (browserName.equalsIgnoreCase("edge")) {
+            System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "/browser-driver/MicrosoftWebDriver.exe");
+            driver = new EdgeDriver();
         }
+       // System.out.println(System.getProperty("user.dir"));
         return driver;
 
     }
-
     @AfterMethod
     public void cleanUp(){
         driver.quit();
     }
-
     public void clickByCss(String locator) {
         driver.findElement(By.cssSelector(locator)).click();
     }
-
     public void clickByXpath(String locator) {
         driver.findElement(By.xpath(locator)).click();
     }
-
     public void typeByCss(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value);
     }
     public void typeByCssNEnter(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
     }
-
+    public void typeByNameNEnter(String locator, String value) {
+        driver.findElement(By.name(locator)).sendKeys(value, Keys.ENTER);
+    }
     public void typeByXpath(String locator, String value) {
         driver.findElement(By.xpath(locator)).sendKeys(value);
     }
-
     public void takeEnterKeys(String locator) {
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }
-
     public void clearInputField(String locator){
         driver.findElement(By.cssSelector(locator)).clear();
     }
@@ -126,7 +124,6 @@ public class Base {
         String st = driver.findElement(By.name(locator)).getText();
         return st;
     }
-
     public List<String> getListOfString(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
         for (WebElement element : list) {
