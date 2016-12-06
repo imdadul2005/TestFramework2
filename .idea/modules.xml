@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Falconstor.iml" filepath="$PROJECT_DIR$/Falconstor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Freestor/Freestor.iml" filepath="$PROJECT_DIR$/Freestor/Freestor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Generic/Generic.iml" filepath="$PROJECT_DIR$/Generic/Generic.iml" />
+    </modules>
+  </component>
+</project>

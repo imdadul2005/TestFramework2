@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite  name="Freestor Automation Framework" parallel="tests">
+
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="url" value="10.7.6.65"></parameter>
+    <parameter name="username" value="admin"></parameter>
+    <parameter name="domain" value="qa.com"></parameter>
+    <parameter name="password" value="superadmin"></parameter>
+
+</suite>
