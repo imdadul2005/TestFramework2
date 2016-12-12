@@ -1,6 +1,5 @@
 package common;
 
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,6 +33,7 @@ public class Base {
 
 
     public WebDriver driver = null;
+    private WebElement element = null;
 //    public static Logger logger = LogManager.getLogger(Base.class);
     @Parameters({"browserName","url","username","domain","password"})
     @BeforeMethod
@@ -44,12 +44,13 @@ public class Base {
         getLocalDriver(browserName);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(url);
+        login(username,domain,password);
         driver.manage().window().maximize();
     }
     public WebDriver getLocalDriver(String browserName){
         System.out.println(System.getProperty("user.dir"));
         if(browserName.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\selenium-browser-driveer\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\selenium-browser-driver\\chromedriver.exe");
             driver = new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("firefox")){
             System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\selenium-browser-driver\\geckodriver.exe");
@@ -67,7 +68,12 @@ public class Base {
     }
     @AfterMethod
     public void cleanUp(){
-        driver.quit();
+       // driver.quit();
+    }
+    public void login(String username,String domain, String password){
+        typeByXpath("html/body/div[1]/div/div[2]/form/fieldset/div[1]/input",username);
+        typeByXpath("html/body/div[1]/div/div[2]/form/fieldset/div[2]/input",domain);
+        typeByCssNEnter(".form-control.ng-pristine.ng-untouched.ng-invalid.ng-invalid-required",password);
     }
     public void clickByCss(String locator) {
         driver.findElement(By.cssSelector(locator)).click();
@@ -101,6 +107,11 @@ public class Base {
     public List<WebElement> getListOfWebElementsByCss(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.cssSelector(locator));
+        return list;
+    }
+    public List<WebElement> getListOfWebElementsByTag(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = driver.findElements(By.tagName(locator));
         return list;
     }
     public void navigateBack(){
@@ -205,5 +216,26 @@ public class Base {
         /* path example to upload a file/image
            path= "C:\\Users\\rrt\\Pictures\\ds1.png";
          */
+    }
+    public List<WebElement> getListOfWebElementsById_Element(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = element.findElements(By.id(locator));
+        return list;
+    }
+    public List<WebElement> getListOfWebElementsByCss_Element(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = element.findElements(By.cssSelector(locator));
+        return list;
+    }
+    public List<WebElement> getListOfWebElementsByTag_Element(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = element.findElements(By.tagName(locator));
+        return list;
+    }
+    public void setElement(WebElement element){
+        this.element = element;
+    }
+    public WebElement getElement(){
+        return this.element;
     }
 }

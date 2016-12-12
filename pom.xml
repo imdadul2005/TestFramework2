@@ -43,4 +43,16 @@
         </dependencies>
 
     </dependencyManagement>
+
+<profiles>
+    <profile>
+        <id>Freestor-app</id>
+        <modules>
+            <module>Generic</module>
+            <module>Freestor</module>
+        </modules>
+    </profile>
+
+</profiles>
+
 </project>
