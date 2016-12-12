@@ -238,4 +238,10 @@ public class Base {
     public WebElement getElement(){
         return this.element;
     }
+    public List<WebElement> manuBar(){
+        setElement(driver.findElement(By.cssSelector(".nav.navbar-nav")));
+        List<WebElement> navList = getListOfWebElementsByTag_Element("li");
+        return navList;
+    }
+
 }
