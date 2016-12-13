@@ -37,7 +37,7 @@ public class Base {
 //    public static Logger logger = LogManager.getLogger(Base.class);
     @Parameters({"browserName","url","username","domain","password"})
     @BeforeMethod
-    public void setUp(@Optional("firefox") String browserName,@Optional("http://www.cnn.com") String url,@Optional("admin") String username,@Optional("") String domain,@Optional("freestor") String password)
+    public void setUp(@Optional("firefox") String browserName,@Optional("http://www.cnn.com") String url,@Optional("superadmin") String username,@Optional("") String domain,@Optional("freestor") String password)
     {
 
         System.out.print(System.getProperty("user.dir"));
@@ -238,10 +238,33 @@ public class Base {
     public WebElement getElement(){
         return this.element;
     }
-    public List<WebElement> manuBar(){
+    public List<WebElement> menuBar(){
         setElement(driver.findElement(By.cssSelector(".nav.navbar-nav")));
         List<WebElement> navList = getListOfWebElementsByTag_Element("li");
         return navList;
     }
+    public void topMenu(String topMenu,String subMenu) throws InterruptedException {
+        List<WebElement> menuList = menuBar();
+        for (WebElement item : menuList) {
+            if (item.getText().equalsIgnoreCase(topMenu))
+            {
+                item.click();
+                sleepFor(2);
+                getListOfWebElementsByCss(item,subMenu);
+                //item.findElement(By.tagName("subMenu")).getText();
+            }
+        }
+    }
+    public void getListOfWebElementsByCss(WebElement element,String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = element.findElements(By.cssSelector(".ng-binding.ng-scope"));
+        System.out.print(list);
+        for (WebElement item : list) {
+            if (item.getText().equalsIgnoreCase(locator))
+            {
+                item.click();
+            }
+        }
 
+    }
 }

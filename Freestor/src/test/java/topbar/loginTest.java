@@ -10,10 +10,14 @@ import java.util.List;
  */
 public class loginTest extends Base {
     @Test
-    public void Test(){
-        setElement(driver.findElement(By.cssSelector(".nav.navbar-nav")));
-        List<WebElement> navList = getListOfWebElementsByTag_Element("li");
-        System.out.println(getListOfString(navList));
+    public void Test() throws InterruptedException {
+        topMenu("Monitor","server view");
+        topMenu("Administration","servers");
+        //   setElement(driver.findElement(By.cssSelector(".nav.navbar-nav")));
+    //    List<WebElement> navList = getListOfWebElementsByTag_Element("li");
+  //      System.out.println(getListOfString(navList));
     }
+
+
 }
 
