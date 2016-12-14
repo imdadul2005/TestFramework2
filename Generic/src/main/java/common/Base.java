@@ -134,7 +134,7 @@ public class Base {
     public List<String> getListOfString(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
         for (WebElement element : list) {
-            items.add(element.getText());
+            items.add(element.getAttribute("title"));
         }
         return items;
     }
@@ -150,6 +150,7 @@ public class Base {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             Actions hover = action.moveToElement(element);
+
         }catch(Exception ex){
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -223,7 +224,7 @@ public class Base {
         list = element.findElements(By.cssSelector(locator));
         return list;
     }
-    public List<WebElement> getListOfWebElementsByTag_Element(String locator) {
+    public List<WebElement> getListOfWebElementsByTag_Element(WebElement element, String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = element.findElements(By.tagName(locator));
         return list;
@@ -292,7 +293,32 @@ public class Base {
                 item.click();
                 break;
             }
-
         }
     }
+    public WebElement findElement(By locator){
+        return driver.findElement(locator);
+    }
+    public void manageNavigationWith(String actionType) throws InterruptedException {
+        controlBar("Manage", "");
+        WebElement temp = driver.findElement(By.cssSelector(".resource-definition-menu1"));
+        //Create Virtual Device
+        //.btn.btn-default.btn-xs.ng-scope
+        List<WebElement> actionItemList = getListOfWebElementsByTag_Element(temp, "button");
+        //mouse hover each element to get the correct hover mesage
+
+        // Text box field, where we mouse hover
+
+        for (WebElement item : actionItemList) {
+            if (item.isEnabled()) {
+                Actions action = new Actions(driver);
+                action.moveToElement(item).build().perform();
+                //sleepFor(2);
+                //    WebElement toolTipElement = driver.findElement(By.cssSelector(".ui-tooltip"));
+                String toolTipText = item.getAttribute("bs-tooltip");
+                System.out.println(toolTipText);
+            }
+        }
+
+    }
 }
+//setting : .title.ng-binding

@@ -1,5 +1,6 @@
 package topbar;
 import common.Base;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 /**
@@ -8,16 +9,10 @@ import org.testng.annotations.Test;
 public class loginTest extends Base {
     @Test
     public void Test() throws InterruptedException {
-        controlBar("Monitor","client view");
-        controlBar("Administration","AD/LDAP Settings");
-        controlBar("Administration","Users");
-        manageNavigation("clients");
-        manageNavigation("Settings");
-        manageNavigation("clients");
-        manageNavigation("Settings");
-        manageNavigation("clients");
-        manageNavigation("Settings");
-        controlBar("Administration","Servers");
+        manageNavigation("virtual devices");
+        driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[1]/div[1]/div[1]/div[2]/span[2]/input")).click();
+        manageNavigationWith("Create");
+
      }
 }
 
