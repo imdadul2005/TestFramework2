@@ -7,23 +7,16 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.SystemClock;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 
 /**
@@ -34,6 +27,8 @@ public class Base {
 
     public WebDriver driver = null;
     private WebElement element = null;
+    String currentURL = null;
+    String newURL = null;
 //    public static Logger logger = LogManager.getLogger(Base.class);
     @Parameters({"browserName","url","username","domain","password"})
     @BeforeMethod
@@ -46,6 +41,7 @@ public class Base {
         driver.get(url);
         login(username,domain,password);
         driver.manage().window().maximize();
+        currentURL = driver.getCurrentUrl();
     }
     public WebDriver getLocalDriver(String browserName){
         System.out.println(System.getProperty("user.dir"));
@@ -239,32 +235,64 @@ public class Base {
         return this.element;
     }
     public List<WebElement> menuBar(){
-        setElement(driver.findElement(By.cssSelector(".nav.navbar-nav")));
-        List<WebElement> navList = getListOfWebElementsByTag_Element("li");
+        List<WebElement> navList = driver.findElements(By.cssSelector(".nav.navbar-nav li"));
         return navList;
     }
-    public void topMenu(String topMenu,String subMenu) throws InterruptedException {
-        List<WebElement> menuList = menuBar();
+    public void controlBar(String topMenu, String subMenu) {
+        List<WebElement> menuList = driver.findElements(By.cssSelector(".nav.navbar-nav li"));
+        System.out.println("top Menu : "+ topMenu + " subMenu " +subMenu);
         for (WebElement item : menuList) {
-            if (item.getText().equalsIgnoreCase(topMenu))
+            if (topMenu.equalsIgnoreCase(item.getText()))
             {
+                System.out.println("top Menu inner: "+item.getText());
                 item.click();
-                sleepFor(2);
-                getListOfWebElementsByCss(item,subMenu);
-                //item.findElement(By.tagName("subMenu")).getText();
+                newURL =driver.getCurrentUrl();
+                if(topMenu.equalsIgnoreCase("manage"))
+                    upDateURL();
+                else {
+                    getListOfWebElementsByCss(item, subMenu);
+                    upDateURL();
+                }
+                break;
             }
         }
+        // Need to through an exception when subMenu is not available
     }
     public void getListOfWebElementsByCss(WebElement element,String locator) {
-        List<WebElement> list = new ArrayList<WebElement>();
-        list = element.findElements(By.cssSelector(".ng-binding.ng-scope"));
-        System.out.print(list);
-        for (WebElement item : list) {
-            if (item.getText().equalsIgnoreCase(locator))
-            {
-                item.click();
-            }
+        try {
+            List<WebElement> list = element.findElements(By.cssSelector(".ng-binding.ng-scope"));
+            findItemOnlist(list,locator);
+        } catch (NoSuchElementException e) {
+            System.out.println("Element Not Found");
         }
 
+    }
+    public void manageNavigation(String tabName) {
+        //If user is already in manage page do not revisit manage
+        controlBar("Manage"," ");
+        WebElement temp = driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div[1]/div[1]/ul"));
+        List<WebElement> navList = temp.findElements(By.cssSelector("li"));
+        findItemOnlist(navList,tabName);
+    }
+    public void upDateURL(){
+        newURL =driver.getCurrentUrl();
+        System.out.println("new url :"+ newURL);
+        System.out.println("current url :"+ currentURL);
+        if(!newURL.equalsIgnoreCase(currentURL)){
+            currentURL=newURL;
+            driver.navigate().to(newURL);
+
+        }
+    }
+    public void findItemOnlist(List<WebElement> listOfItem, String findme){
+        for (WebElement item : listOfItem) {
+            if (item.getText().equalsIgnoreCase(findme))
+            {
+                System.out.println("Requested Dropdown List: "+item.getText());
+                item.click();
+                break;
+            }
+
+        }
     }
 }
