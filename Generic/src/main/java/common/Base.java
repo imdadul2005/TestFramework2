@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -219,7 +220,7 @@ public class Base {
         list = element.findElements(By.id(locator));
         return list;
     }
-    public List<WebElement> getListOfWebElementsByCss_Element(String locator) {
+    public List<WebElement> getListOfWebElementsByCss_Element(WebElement element,String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = element.findElements(By.cssSelector(locator));
         return list;
@@ -241,11 +242,11 @@ public class Base {
     }
     public void controlBar(String topMenu, String subMenu) {
         List<WebElement> menuList = driver.findElements(By.cssSelector(".nav.navbar-nav li"));
-        System.out.println("top Menu : "+ topMenu + " subMenu " +subMenu);
+        System.out.println("controlBar () --top Menu : "+ topMenu + " subMenu " +subMenu);
         for (WebElement item : menuList) {
             if (topMenu.equalsIgnoreCase(item.getText()))
             {
-                System.out.println("top Menu inner: "+item.getText());
+                System.out.println("controlBar () --top Menu inner: "+item.getText());
                 item.click();
                 newURL =driver.getCurrentUrl();
                 if(topMenu.equalsIgnoreCase("manage"))
@@ -277,8 +278,9 @@ public class Base {
     }
     public void upDateURL(){
         newURL =driver.getCurrentUrl();
-        System.out.println("new url :"+ newURL);
-        System.out.println("current url :"+ currentURL);
+
+        System.out.println("upDateURL() --current url :"+ currentURL);
+        System.out.println("upDateURL() --new url :"+ newURL);
         if(!newURL.equalsIgnoreCase(currentURL)){
             currentURL=newURL;
             driver.navigate().to(newURL);
@@ -289,7 +291,7 @@ public class Base {
         for (WebElement item : listOfItem) {
             if (item.getText().equalsIgnoreCase(findme))
             {
-                System.out.println("Requested Dropdown List: "+item.getText());
+                System.out.println("findItemOnlist() --Requested Dropdown List: "+item.getText());
                 item.click();
                 break;
             }
@@ -300,25 +302,31 @@ public class Base {
     }
     public void manageNavigationWith(String actionType) throws InterruptedException {
         controlBar("Manage", "");
-        WebElement temp = driver.findElement(By.cssSelector(".resource-definition-menu1"));
-        //Create Virtual Device
-        //.btn.btn-default.btn-xs.ng-scope
-        List<WebElement> actionItemList = getListOfWebElementsByTag_Element(temp, "button");
-        //mouse hover each element to get the correct hover mesage
+        WebElement temp =null;
 
+        for (int i=0; i<=3;i++){
+            try{
+                temp = driver.findElement(By.cssSelector(".panel-heading.clearfix"));
+                break;
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            temp = driver.findElement(By.cssSelector(".panel-heading.clearfix"));
+        }
+        List<WebElement> actionItemList = getListOfWebElementsByCss_Element(temp, ".btn-group.ng-scope");
+        //mouse hover each element to get the correct hover message
         // Text box field, where we mouse hover
 
         for (WebElement item : actionItemList) {
             if (item.isEnabled()) {
                 Actions action = new Actions(driver);
-                action.moveToElement(item).build().perform();
-                //sleepFor(2);
-                //    WebElement toolTipElement = driver.findElement(By.cssSelector(".ui-tooltip"));
+                //action.click(item).build().perform();
+                sleepFor(2);
+                action.moveToElement(item).build(). perform();
                 String toolTipText = item.getAttribute("bs-tooltip");
                 System.out.println(toolTipText);
             }
         }
-
     }
 }
 //setting : .title.ng-binding

@@ -9,9 +9,10 @@ import org.testng.annotations.Test;
 public class loginTest extends Base {
     @Test
     public void Test() throws InterruptedException {
-        manageNavigation("virtual devices");
-        driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[1]/div[1]/div[1]/div[2]/span[2]/input")).click();
-        manageNavigationWith("Create");
+        manageNavigation("Settings");
+     //   manageNavigation("virtual devices");
+      //  driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div/div[1]/div/div[1]/div[1]/div[1]/div[2]/span[2]/input")).click();
+      //  manageNavigationWith("Create");
 
      }
 }

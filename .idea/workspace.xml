@@ -29,25 +29,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manuBar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Freestor/src/main/java/topbar/manuBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Base.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="314" column="16" lean-forward="false" selection-start-line="314" selection-start-column="16" selection-end-line="314" selection-end-column="16" />
+            <state relative-caret-position="308">
+              <caret line="295" column="22" lean-forward="false" selection-start-line="295" selection-start-column="22" selection-end-line="295" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#983#1048#0" expanded="false" />
+                <element signature="method#setUp#0;class#Base#0" expanded="false" />
                 <element signature="method#getLocalDriver#0;class#Base#0" expanded="false" />
                 <element signature="method#cleanUp#0;class#Base#0" expanded="false" />
                 <element signature="method#login#0;class#Base#0" expanded="false" />
@@ -56,11 +46,12 @@
                 <element signature="method#getListOfWebElementsById#0;class#Base#0" expanded="false" />
                 <element signature="method#getListOfWebElementsByCss#0;class#Base#0" expanded="false" />
                 <element signature="method#getListOfWebElementsByTag#0;class#Base#0" expanded="false" />
-                <element signature="e#4717#4729#0" expanded="true" />
+                <element signature="e#4765#4777#0" expanded="true" />
                 <element signature="method#getTextByCss#0;class#Base#0" expanded="false" />
                 <element signature="method#getTextByXpath#0;class#Base#0" expanded="false" />
                 <element signature="method#getTextByName#0;class#Base#0" expanded="false" />
-                <element signature="e#5622#5630#0" expanded="true" />
+                <element signature="method#getListOfString#0;class#Base#0" expanded="false" />
+                <element signature="e#5670#5678#0" expanded="true" />
                 <element signature="method#selectOptionByVisibleText#0;class#Base#0" expanded="false" />
                 <element signature="method#sleepFor#0;class#Base#0" expanded="false" />
                 <element signature="method#mouseHoverByXpath#0;class#Base#0" expanded="false" />
@@ -68,31 +59,15 @@
                 <element signature="method#cancelAlert#0;class#Base#0" expanded="false" />
                 <element signature="method#getLinks#0;class#Base#0" expanded="false" />
                 <element signature="method#takeScreenShot#0;class#Base#0" expanded="false" />
-                <element signature="method#waitUntilClickAble#0;class#Base#0" expanded="false" />
                 <element signature="method#waitUntilVisible#0;class#Base#0" expanded="false" />
-                <element signature="method#waitUntilSelectable#0;class#Base#0" expanded="false" />
                 <element signature="method#upLoadFile#0;class#Base#0" expanded="false" />
                 <element signature="method#getListOfWebElementsByCss_Element#0;class#Base#0" expanded="false" />
-                <element signature="e#9213#9225#0" expanded="true" />
+                <element signature="e#9280#9292#0" expanded="true" />
                 <element signature="method#getListOfWebElementsByTag_Element#0;class#Base#0" expanded="false" />
                 <element signature="method#menuBar#0;class#Base#0" expanded="false" />
-                <element signature="method#controlBar#0;class#Base#0" expanded="false" />
-                <element signature="method#getListOfWebElementsByCss#1;class#Base#0" expanded="false" />
-                <element signature="method#manageNavigation#0;class#Base#0" expanded="false" />
                 <element signature="method#upDateURL#0;class#Base#0" expanded="false" />
-                <marker date="1481746776597" expanded="false" signature="8945:9087" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="administrator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/administrator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#manageNavigationWith#0;class#Base#0" expanded="false" />
+                <marker date="1481758161640" expanded="false" signature="8993:9135" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,9 +76,24 @@
       <file leaf-file-name="manage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/manage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="9" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="docComment;class#manage#0" expanded="false" />
+                <element signature="method#manageNavigationWith#0;class#manage#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manuBar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Freestor/src/main/java/topbar/manuBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +111,8 @@
       <file leaf-file-name="loginTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Freestor/src/test/java/topbar/loginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,11 +161,6 @@
         <option value="$PROJECT_DIR$/Generic/src/main/java/common/Base.java" />
       </list>
     </option>
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="TestNG" name="$PROJECT_DIR$/../../../Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" />
-    </enabled-run-configurations>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -958,35 +943,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 14h 43m 53s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 10m 03s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 15h 01m 47s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 11m 22s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 15h 01m 49s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 12m 04s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 15h 05m 10s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 15m 08s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 15h 06m 43s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 17m 48s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 15h 11m 53s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 19m 38s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 15h 14m 04s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 23m 17s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 15h 15m 54s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 24m 59s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 15h 19m 54s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 26m 08s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="loginTest_(1) - 2016.12.14 at 15h 19m 12s.xml">
-      <configuration name="loginTest (1)" configurationId="TestNG" />
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 29m 35s.xml">
+      <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -999,20 +984,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41990668" sideWeight="0.77427185" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46345258" sideWeight="0.77427185" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32659408" sideWeight="0.22572815" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15695792" sideWeight="0.49061033" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.26780626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38413686" sideWeight="0.86289" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39657855" sideWeight="0.86289" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3538588" sideWeight="0.5093897" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38569206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1025,7 +1010,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23300971" sideWeight="0.50808316" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42768273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6967341" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1082,18 +1067,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Generic/src/main/java/common/Base.java</url>
-          <line>108</line>
+          <line>109</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Generic/src/main/java/common/Base.java</url>
-          <line>301</line>
+          <line>204</line>
           <properties />
-          <option name="timeStamp" value="40" />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1125,7 +1110,7 @@
             <element signature="method#getTextByXpath#0;class#Base#0" expanded="false" />
             <element signature="method#getTextByName#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfString#0;class#Base#0" expanded="false" />
-            <element signature="e#5622#5630#0" expanded="true" />
+            <element signature="e#5670#5678#0" expanded="true" />
             <element signature="method#selectOptionByVisibleText#0;class#Base#0" expanded="false" />
             <element signature="method#sleepFor#0;class#Base#0" expanded="false" />
             <element signature="method#mouseHoverByCSS#0;class#Base#0" expanded="false" />
@@ -1226,12 +1211,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Freestor/src/main/java/topbar/manuBar.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/TestMethodWorker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="113">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="802" column="0" lean-forward="false" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1244,36 +1245,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/administrator.java">
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/manage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="docComment;class#manage#0" expanded="false" />
+            <element signature="method#manageNavigationWith#0;class#manage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freestor/src/main/java/topbar/manuBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/manage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="56" column="485" lean-forward="false" selection-start-line="56" selection-start-column="485" selection-end-line="56" selection-end-column="485" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Freestor/src/test/java/topbar/loginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1282,10 +1278,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="314" column="16" lean-forward="false" selection-start-line="314" selection-start-column="16" selection-end-line="314" selection-end-column="16" />
+        <state relative-caret-position="308">
+          <caret line="295" column="22" lean-forward="false" selection-start-line="295" selection-start-column="22" selection-end-line="295" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#983#1048#0" expanded="false" />
+            <element signature="method#setUp#0;class#Base#0" expanded="false" />
             <element signature="method#getLocalDriver#0;class#Base#0" expanded="false" />
             <element signature="method#cleanUp#0;class#Base#0" expanded="false" />
             <element signature="method#login#0;class#Base#0" expanded="false" />
@@ -1294,11 +1292,12 @@
             <element signature="method#getListOfWebElementsById#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfWebElementsByCss#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfWebElementsByTag#0;class#Base#0" expanded="false" />
-            <element signature="e#4717#4729#0" expanded="true" />
+            <element signature="e#4765#4777#0" expanded="true" />
             <element signature="method#getTextByCss#0;class#Base#0" expanded="false" />
             <element signature="method#getTextByXpath#0;class#Base#0" expanded="false" />
             <element signature="method#getTextByName#0;class#Base#0" expanded="false" />
-            <element signature="e#5622#5630#0" expanded="true" />
+            <element signature="method#getListOfString#0;class#Base#0" expanded="false" />
+            <element signature="e#5670#5678#0" expanded="true" />
             <element signature="method#selectOptionByVisibleText#0;class#Base#0" expanded="false" />
             <element signature="method#sleepFor#0;class#Base#0" expanded="false" />
             <element signature="method#mouseHoverByXpath#0;class#Base#0" expanded="false" />
@@ -1306,19 +1305,15 @@
             <element signature="method#cancelAlert#0;class#Base#0" expanded="false" />
             <element signature="method#getLinks#0;class#Base#0" expanded="false" />
             <element signature="method#takeScreenShot#0;class#Base#0" expanded="false" />
-            <element signature="method#waitUntilClickAble#0;class#Base#0" expanded="false" />
             <element signature="method#waitUntilVisible#0;class#Base#0" expanded="false" />
-            <element signature="method#waitUntilSelectable#0;class#Base#0" expanded="false" />
             <element signature="method#upLoadFile#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfWebElementsByCss_Element#0;class#Base#0" expanded="false" />
-            <element signature="e#9213#9225#0" expanded="true" />
+            <element signature="e#9280#9292#0" expanded="true" />
             <element signature="method#getListOfWebElementsByTag_Element#0;class#Base#0" expanded="false" />
             <element signature="method#menuBar#0;class#Base#0" expanded="false" />
-            <element signature="method#controlBar#0;class#Base#0" expanded="false" />
-            <element signature="method#getListOfWebElementsByCss#1;class#Base#0" expanded="false" />
-            <element signature="method#manageNavigation#0;class#Base#0" expanded="false" />
             <element signature="method#upDateURL#0;class#Base#0" expanded="false" />
-            <marker date="1481746776597" expanded="false" signature="8945:9087" ph="{...}" />
+            <element signature="method#manageNavigationWith#0;class#Base#0" expanded="false" />
+            <marker date="1481758161640" expanded="false" signature="8993:9135" ph="{...}" />
           </folding>
         </state>
       </provider>
