@@ -32,67 +32,62 @@
       <file leaf-file-name="Base.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="295" column="22" lean-forward="false" selection-start-line="295" selection-start-column="22" selection-end-line="295" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="400" column="5" lean-forward="false" selection-start-line="400" selection-start-column="5" selection-end-line="400" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#983#1048#0" expanded="false" />
+                <element signature="e#988#1057#0" expanded="false" />
                 <element signature="method#setUp#0;class#Base#0" expanded="false" />
                 <element signature="method#getLocalDriver#0;class#Base#0" expanded="false" />
                 <element signature="method#cleanUp#0;class#Base#0" expanded="false" />
                 <element signature="method#login#0;class#Base#0" expanded="false" />
                 <element signature="method#typeByCssNEnter#0;class#Base#0" expanded="false" />
                 <element signature="method#typeByNameNEnter#0;class#Base#0" expanded="false" />
+                <element signature="e#4192#4193#0" expanded="true" />
                 <element signature="method#getListOfWebElementsById#0;class#Base#0" expanded="false" />
                 <element signature="method#getListOfWebElementsByCss#0;class#Base#0" expanded="false" />
                 <element signature="method#getListOfWebElementsByTag#0;class#Base#0" expanded="false" />
-                <element signature="e#4765#4777#0" expanded="true" />
+                <element signature="e#4813#4825#0" expanded="true" />
+                <element signature="e#4945#4946#0" expanded="true" />
+                <element signature="e#5022#5023#0" expanded="true" />
                 <element signature="method#getTextByCss#0;class#Base#0" expanded="false" />
                 <element signature="method#getTextByXpath#0;class#Base#0" expanded="false" />
+                <element signature="e#5410#5411#0" expanded="true" />
                 <element signature="method#getTextByName#0;class#Base#0" expanded="false" />
                 <element signature="method#getListOfString#0;class#Base#0" expanded="false" />
-                <element signature="e#5670#5678#0" expanded="true" />
+                <element signature="e#5731#5739#0" expanded="true" />
                 <element signature="method#selectOptionByVisibleText#0;class#Base#0" expanded="false" />
                 <element signature="method#sleepFor#0;class#Base#0" expanded="false" />
+                <element signature="method#mouseHoverByCSS#0;class#Base#0" expanded="false" />
                 <element signature="method#mouseHoverByXpath#0;class#Base#0" expanded="false" />
                 <element signature="method#okAlert#0;class#Base#0" expanded="false" />
                 <element signature="method#cancelAlert#0;class#Base#0" expanded="false" />
+                <element signature="e#7594#7595#0" expanded="true" />
+                <element signature="e#7682#7683#0" expanded="true" />
                 <element signature="method#getLinks#0;class#Base#0" expanded="false" />
                 <element signature="method#takeScreenShot#0;class#Base#0" expanded="false" />
                 <element signature="method#waitUntilVisible#0;class#Base#0" expanded="false" />
                 <element signature="method#upLoadFile#0;class#Base#0" expanded="false" />
                 <element signature="method#getListOfWebElementsByCss_Element#0;class#Base#0" expanded="false" />
-                <element signature="e#9280#9292#0" expanded="true" />
+                <element signature="e#9377#9389#0" expanded="true" />
                 <element signature="method#getListOfWebElementsByTag_Element#0;class#Base#0" expanded="false" />
+                <element signature="e#9777#9778#0" expanded="true" />
+                <element signature="e#9853#9854#0" expanded="true" />
                 <element signature="method#menuBar#0;class#Base#0" expanded="false" />
+                <element signature="method#controlBar#0;class#Base#0" expanded="false" />
+                <element signature="method#getListOfWebElementsByCss#1;class#Base#0" expanded="false" />
+                <element signature="method#manageNavigation#0;class#Base#0" expanded="false" />
                 <element signature="method#upDateURL#0;class#Base#0" expanded="false" />
+                <element signature="method#findItemOnlist#0;class#Base#0" expanded="false" />
                 <element signature="method#manageNavigationWith#0;class#Base#0" expanded="false" />
-                <marker date="1481758161640" expanded="false" signature="8993:9135" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/manage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding>
-                <element signature="docComment;class#manage#0" expanded="false" />
-                <element signature="method#manageNavigationWith#0;class#manage#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manuBar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Freestor/src/main/java/topbar/manuBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#13005#13064#0" expanded="false" />
+                <element signature="method#settings#0;class#Base#0" expanded="false" />
+                <element signature="method#printList#0;class#Base#0" expanded="false" />
+                <element signature="e#14444#14445#0" expanded="true" />
+                <element signature="e#14482#14483#0" expanded="true" />
+                <element signature="e#14537#14538#0" expanded="true" />
+                <element signature="e#14580#14581#0" expanded="true" />
+                <marker date="1481833030046" expanded="false" signature="9088:9230" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,8 +96,8 @@
       <file leaf-file-name="FreestorTestRunner.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Freestor/src/test/resources/FreestorTestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="187">
+              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -111,8 +106,8 @@
       <file leaf-file-name="loginTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Freestor/src/test/java/topbar/loginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,6 +128,7 @@
     <findStrings>
       <find>tag</find>
       <find>getListOfWebElementsByTag_Element</find>
+      <find>requ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,8 +151,8 @@
         <option value="$PROJECT_DIR$/Freestor/src/test/java/login/loginTest.java" />
         <option value="$PROJECT_DIR$/Freestor/src/main/java/topbar/manuBar.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/common/administrator.java" />
-        <option value="$PROJECT_DIR$/Freestor/src/test/resources/FreestorTestRunner.xml" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/common/manage.java" />
+        <option value="$PROJECT_DIR$/Freestor/src/test/resources/FreestorTestRunner.xml" />
         <option value="$PROJECT_DIR$/Freestor/src/test/java/topbar/loginTest.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/common/Base.java" />
       </list>
@@ -943,34 +939,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 10m 03s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 10h 19m 30s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 11m 22s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 10h 25m 29s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 12m 04s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 14h 57m 22s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 15m 08s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 14h 59m 29s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 17m 48s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 15h 04m 26s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 19m 38s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 15h 08m 28s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 23m 17s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 15h 09m 42s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 24m 59s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 15h 11m 41s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 26m 08s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 15h 14m 10s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.14 at 18h 29m 35s.xml">
+    <history-entry file="C__Users_Imdadul_Desktop_TestFramwork_Falconstor_Freestor_src_test_resources_FreestorTestRunner_xml - 2016.12.15 at 15h 17m 31s.xml">
       <configuration name="C:/Users/Imdadul/Desktop/TestFramwork/Falconstor/Freestor/src/test/resources/FreestorTestRunner.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -997,13 +993,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32659408" sideWeight="0.22572815" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15695792" sideWeight="0.49061033" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.26780626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39657855" sideWeight="0.86289" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23017107" sideWeight="0.86289" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3538588" sideWeight="0.5093897" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38569206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21763754" sideWeight="0.49191687" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22977346" sideWeight="0.49191687" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1067,18 +1063,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Generic/src/main/java/common/Base.java</url>
-          <line>109</line>
+          <line>123</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Generic/src/main/java/common/Base.java</url>
-          <line>204</line>
+          <line>237</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="55" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1110,7 +1106,7 @@
             <element signature="method#getTextByXpath#0;class#Base#0" expanded="false" />
             <element signature="method#getTextByName#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfString#0;class#Base#0" expanded="false" />
-            <element signature="e#5670#5678#0" expanded="true" />
+            <element signature="e#5731#5739#0" expanded="true" />
             <element signature="method#selectOptionByVisibleText#0;class#Base#0" expanded="false" />
             <element signature="method#sleepFor#0;class#Base#0" expanded="false" />
             <element signature="method#mouseHoverByCSS#0;class#Base#0" expanded="false" />
@@ -1237,25 +1233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Freestor/src/test/resources/FreestorTestRunner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/manage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="docComment;class#manage#0" expanded="false" />
-            <element signature="method#manageNavigationWith#0;class#manage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Freestor/src/main/java/topbar/manuBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1266,10 +1243,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/manage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#manage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Freestor/src/test/resources/FreestorTestRunner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Freestor/src/test/java/topbar/loginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1278,42 +1273,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Generic/src/main/java/common/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="295" column="22" lean-forward="false" selection-start-line="295" selection-start-column="22" selection-end-line="295" selection-end-column="22" />
+        <state relative-caret-position="210">
+          <caret line="400" column="5" lean-forward="false" selection-start-line="400" selection-start-column="5" selection-end-line="400" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#983#1048#0" expanded="false" />
+            <element signature="e#988#1057#0" expanded="false" />
             <element signature="method#setUp#0;class#Base#0" expanded="false" />
             <element signature="method#getLocalDriver#0;class#Base#0" expanded="false" />
             <element signature="method#cleanUp#0;class#Base#0" expanded="false" />
             <element signature="method#login#0;class#Base#0" expanded="false" />
             <element signature="method#typeByCssNEnter#0;class#Base#0" expanded="false" />
             <element signature="method#typeByNameNEnter#0;class#Base#0" expanded="false" />
+            <element signature="e#4192#4193#0" expanded="true" />
             <element signature="method#getListOfWebElementsById#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfWebElementsByCss#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfWebElementsByTag#0;class#Base#0" expanded="false" />
-            <element signature="e#4765#4777#0" expanded="true" />
+            <element signature="e#4813#4825#0" expanded="true" />
+            <element signature="e#4945#4946#0" expanded="true" />
+            <element signature="e#5022#5023#0" expanded="true" />
             <element signature="method#getTextByCss#0;class#Base#0" expanded="false" />
             <element signature="method#getTextByXpath#0;class#Base#0" expanded="false" />
+            <element signature="e#5410#5411#0" expanded="true" />
             <element signature="method#getTextByName#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfString#0;class#Base#0" expanded="false" />
-            <element signature="e#5670#5678#0" expanded="true" />
+            <element signature="e#5731#5739#0" expanded="true" />
             <element signature="method#selectOptionByVisibleText#0;class#Base#0" expanded="false" />
             <element signature="method#sleepFor#0;class#Base#0" expanded="false" />
+            <element signature="method#mouseHoverByCSS#0;class#Base#0" expanded="false" />
             <element signature="method#mouseHoverByXpath#0;class#Base#0" expanded="false" />
             <element signature="method#okAlert#0;class#Base#0" expanded="false" />
             <element signature="method#cancelAlert#0;class#Base#0" expanded="false" />
+            <element signature="e#7594#7595#0" expanded="true" />
+            <element signature="e#7682#7683#0" expanded="true" />
             <element signature="method#getLinks#0;class#Base#0" expanded="false" />
             <element signature="method#takeScreenShot#0;class#Base#0" expanded="false" />
             <element signature="method#waitUntilVisible#0;class#Base#0" expanded="false" />
             <element signature="method#upLoadFile#0;class#Base#0" expanded="false" />
             <element signature="method#getListOfWebElementsByCss_Element#0;class#Base#0" expanded="false" />
-            <element signature="e#9280#9292#0" expanded="true" />
+            <element signature="e#9377#9389#0" expanded="true" />
             <element signature="method#getListOfWebElementsByTag_Element#0;class#Base#0" expanded="false" />
+            <element signature="e#9777#9778#0" expanded="true" />
+            <element signature="e#9853#9854#0" expanded="true" />
             <element signature="method#menuBar#0;class#Base#0" expanded="false" />
+            <element signature="method#controlBar#0;class#Base#0" expanded="false" />
+            <element signature="method#getListOfWebElementsByCss#1;class#Base#0" expanded="false" />
+            <element signature="method#manageNavigation#0;class#Base#0" expanded="false" />
             <element signature="method#upDateURL#0;class#Base#0" expanded="false" />
+            <element signature="method#findItemOnlist#0;class#Base#0" expanded="false" />
             <element signature="method#manageNavigationWith#0;class#Base#0" expanded="false" />
-            <marker date="1481758161640" expanded="false" signature="8993:9135" ph="{...}" />
+            <element signature="e#13005#13064#0" expanded="false" />
+            <element signature="method#settings#0;class#Base#0" expanded="false" />
+            <element signature="method#printList#0;class#Base#0" expanded="false" />
+            <element signature="e#14444#14445#0" expanded="true" />
+            <element signature="e#14482#14483#0" expanded="true" />
+            <element signature="e#14537#14538#0" expanded="true" />
+            <element signature="e#14580#14581#0" expanded="true" />
+            <marker date="1481833030046" expanded="false" signature="9088:9230" ph="{...}" />
           </folding>
         </state>
       </provider>

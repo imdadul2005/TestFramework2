@@ -5,7 +5,9 @@
 
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="http://192.168.15.122"></parameter>
-
+    <parameter name="username" value="imdadul.hoq"></parameter>
+    <parameter name="domain" value="ihoq.net"></parameter>
+    <parameter name="password" value="$IPStor101"></parameter>
 
     <test name = "Freestor TestSuit">
         <classes>
