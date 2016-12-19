@@ -71,13 +71,16 @@ public class Base {
     }
 
     public void login(String username, String domain, String password) {
-        typeByXpath("html/body/div[1]/div/div[2]/form/fieldset/div[1]/input", username);
-        typeByXpath("html/body/div[1]/div/div[2]/form/fieldset/div[2]/input", domain);
-        typeByCssNEnter(".form-control.ng-pristine.ng-untouched.ng-invalid.ng-invalid-required", password);
+        typeByCss("input[placeholder=Username]",username);
+        typeByCss("input[placeholder=Domain]",domain);
+        typeByCssNEnter("input[placeholder=Password]",password);
     }
 
     public void clickByCss(String locator) {
         driver.findElement(By.cssSelector(locator)).click();
+    }
+    public void clickByCss(WebElement selector, String locator) {
+        selector.findElement(By.cssSelector(locator)).click();
     }
 
     public void clickByXpath(String locator) {
@@ -121,6 +124,11 @@ public class Base {
     }
 
     public List<WebElement> getListOfWebElementsByTag(String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = driver.findElements(By.tagName(locator));
+        return list;
+    }
+    public List<WebElement> getListOfWebElementsByXpath(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.tagName(locator));
         return list;
@@ -262,7 +270,11 @@ public class Base {
         list = element.findElements(By.cssSelector(locator));
         return list;
     }
-
+    public List<WebElement> getListOfWebElementsByXpath_Element(WebElement element, String locator) {
+        List<WebElement> list = new ArrayList<WebElement>();
+        list = element.findElements(By.xpath(locator));
+        return list;
+    }
     public List<WebElement> getListOfWebElementsByTag_Element(WebElement element, String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = element.findElements(By.tagName(locator));
@@ -345,31 +357,41 @@ public class Base {
     }
 
     public void manageNavigationWith(String actionType) throws InterruptedException {
+
+
         controlBar("Manage", "");
+        WebElement manageVdev= driver.findElement(By.cssSelector(".panel.panel-default.ng-scope[ng-controller=ManageVirtualDevicesCtrl]"));
+
         WebElement temp = null;
 
-        for (int i = 0; i <= 3; i++) {
+       /* for (int i = 0; i <= 3; i++) {
             try {
-                temp = driver.findElement(By.cssSelector(".panel-heading.clearfix"));
+                manageVdev= driver.findElement(By.cssSelector(".panel.panel-default.ng-scope[ng-controller=ManageVirtualDevicesCtrl]"));
                 break;
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-            temp = driver.findElement(By.cssSelector(".panel-heading.clearfix"));
-        }
-        List<WebElement> actionItemList = getListOfWebElementsByCss_Element(temp, ".btn-group.ng-scope");
+            manageVdev= driver.findElement(By.cssSelector(".panel.panel-default.ng-scope[ng-controller=ManageVirtualDevicesCtrl]"));
+        }*/
+        manageVdev= driver.findElement(By.cssSelector(".panel.panel-default.ng-scope[ng-controller=ManageVirtualDevicesCtrl]"));
+
+        List<WebElement> actionItemList = manageVdev.findElements(By.cssSelector("button"));
         //mouse hover each element to get the correct hover message
         // Text box field, where we mouse hover
-
+        sleepFor(2);
         for (WebElement item : actionItemList) {
-            if (item.isEnabled()) {
+           // if (item.isEnabled()) {
+               System.out.println(item.getText());
                 Actions action = new Actions(driver);
-                //action.click(item).build().perform();
+                action.click(item).build().perform();
+
                 sleepFor(2);
-                action.moveToElement(item).build().perform();
-                String toolTipText = item.getAttribute("bs-tooltip");
-                System.out.println(toolTipText);
-            }
+                driver.switchTo().activeElement();
+            modalFooter("cancel");
+             //   action.moveToElement(item).build().perform();
+            //    String toolTipText = item.getAttribute("bs-tooltip");
+           //     System.out.println(toolTipText);
+          //  }
         }
     }
 
@@ -388,7 +410,7 @@ public class Base {
 
     public void printList(List<WebElement> listOfItem) {
         for (WebElement item : listOfItem) {
-                System.out.println("printList() --List: " + item.getText());
+                System.out.println("printList() --List: " + item.getText()+ " text : " + item.getAttribute("text"));
             }
         }
 
@@ -409,7 +431,39 @@ public class Base {
             settings(actionItem);
         }
     }
+
+    public void modalFooter(String selection){
+        WebElement temp = driver.findElement(By.cssSelector(".modal-footer"));
+       List<WebElement> buttonList = getListOfWebElementsByXpath_Element(temp,"//button");
+        findItemOnlist(buttonList, selection);
+      //  printList(tempList); clickByXpath(temp,"//button[@text='Cancel']");
+
+
+
+
+
+      /*  if (selection.equalsIgnoreCase("cancel"))
+            clickByXpath("//button[@type='button']");
+        else
+            clickByXpath("//button[@type='submit' and @value='selection']");
+*/
+    }
+
+    private void clickByXpath(WebElement element, String locator) {
+        element.findElement(By.xpath(locator)).click();
+
+    }
+
+    public void serverList(String selectedServer){
+        controlBar("Manage", "");
+        WebElement arrayInfo = driver.findElement(By.cssSelector(".array-info1"));
+        List<WebElement> serverList = getListOfWebElementsByXpath_Element(arrayInfo,"//button");
+        printList(serverList);
+        findItemOnlist(serverList,selectedServer);
+
+    }
 }
+
 
 //setting : .title.ng-binding
 

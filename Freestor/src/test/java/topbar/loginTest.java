@@ -15,9 +15,12 @@ public class loginTest extends Base {
       //  manageNavigationWith("Create");
 
     //settings("IO Multi-Cluster");
-        goTo("analytics","alerts");
-        goTo("Monitor","Client view", "Performance", "");
-        goTo("Manage","", "Settings", "Download x-ray");
+  //      goTo("analytics","alerts");
+  //      manageNavigationWith("test");
+   //     goTo("Monitor","Client view", "Performance", "");
+ //       goTo("Manage","", "Settings", "System Time");
+
+        serverList("FUJITSU-40");
      }
 }
 
