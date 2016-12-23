@@ -427,7 +427,7 @@ public class Base {
         manageNavigation(lowerTab);
 
         // Special Case to display setting
-        if ((topTab.equalsIgnoreCase("manage")) || (lowerTab.equalsIgnoreCase("settings"))){
+        if ((topTab.equalsIgnoreCase("manage")) && (lowerTab.equalsIgnoreCase("settings"))){
             settings(actionItem);
         }
     }
